@@ -1,4 +1,4 @@
-package exceptions;
+package Exceptions;
 
 public class NegativeWeightException extends Exception{
     private String message;
@@ -6,6 +6,5 @@ public class NegativeWeightException extends Exception{
         this.message = s;
     }
 
-    String get_message() { return message;}
+    public String get_message() { return message;}
 }
-

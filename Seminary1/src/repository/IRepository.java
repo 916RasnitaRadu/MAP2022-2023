@@ -2,7 +2,6 @@ package repository;
 
 import exceptions.NegativeWeightException;
 import model.entity;
-import org.w3c.dom.Entity;
 
 import java.util.List;
 
