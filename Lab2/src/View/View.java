@@ -43,9 +43,11 @@ public class View {
 
                 System.out.print("Please enter the cc of the car: ");
                 cc = input.nextFloat();
+                input.nextLine();
 
                 System.out.print("Please enter the weight of the car: ");
                 weight = input.nextInt();
+                input.nextLine();
 
                 if (weight < 0) throw new NegativeWeightException("Weight must be a positive number!\n");
                 Car car = new Car(color, weight, cc);
@@ -59,10 +61,11 @@ public class View {
                 color = input.next();
 
                 System.out.print("Please enter the brand of the motorbike: ");
-                brand = input.next();
+                brand = input.nextLine();
 
                 System.out.print("Please enter the weight of the motorbike: ");
                 weight = input.nextInt();
+                input.nextLine();
 
                 if (weight < 0) throw new NegativeWeightException("Weight must be a positive number!\n");
                 Motorbike mt = new Motorbike(color, weight, brand);
@@ -80,6 +83,7 @@ public class View {
 
                 System.out.print("Please enter the weight of the bike: ");
                 weight = input.nextInt();
+                input.nextLine();
 
                 if (weight < 0) throw new NegativeWeightException("Weight must be a positive number!");
                 Bicycle b = new Bicycle(color,weight,tw);

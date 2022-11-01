@@ -13,4 +13,6 @@ public interface IRepository {
     Vehicle[] get_all();
 
     List<Vehicle> get_all_that_are_red();
+
+    int getSize();
 }

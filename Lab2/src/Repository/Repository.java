@@ -47,4 +47,9 @@ public class Repository implements IRepository{
         }
         return result;
     }
+
+    @Override
+    public int getSize() {
+        return this.size;
+    }
 }

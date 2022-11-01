@@ -12,7 +12,7 @@ import View.View;
 
 public class Main {
 
-    public void test_app() throws NegativeWeightException {
+    public static void test_app() throws NegativeWeightException {
         IRepository repo = new Repository();
         Controller controller = new Controller(repo);
 
@@ -28,6 +28,7 @@ public class Main {
         Bicycle b2 = new Bicycle("red", 20, (float)2.1);
         Bicycle b3 = new Bicycle("blue", 45, (float)3.0);
 
+
         controller.add_ctrl(car1);
         controller.add_ctrl(car2);
         controller.add_ctrl(car3);
@@ -38,11 +39,18 @@ public class Main {
         controller.add_ctrl(b2);
         controller.add_ctrl(b3);
 
-        assert controller.get_all_that_are_red_ctrl().size() == 5;
+
+
+
+
+
+        controller.remove_ctrl("black", 300);
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NegativeWeightException {
+        test_app();
+
         IRepository repo = new Repository();
         Controller controller = new Controller(repo);
         View ui = new View(controller);

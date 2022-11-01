@@ -16,7 +16,12 @@ public class Controller {
 
     public void remove_ctrl(String color, int w)
     {
+        this.repo.remove(color,w);
+    }
 
+    public int get_size_ctrl()
+    {
+        return repo.getSize();
     }
 
     public ArrayList<Vehicle> get_all_that_are_red_ctrl()
